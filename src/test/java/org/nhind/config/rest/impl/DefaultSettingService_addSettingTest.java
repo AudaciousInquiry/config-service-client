@@ -111,7 +111,7 @@ public class DefaultSettingService_addSettingTest extends SpringBaseTest
 						final Setting addedSetting = addedSettingsIter.next(); 
 						
 						assertEquals(addedSetting.getName(), retrievedSetting.getName());
-						assertEquals(addedSetting.getValue(), retrievedSetting.getValue());
+						assertEquals(addedSetting.getValue(), retrievedSetting.getSettingValue());
 					}
 					
 				}
